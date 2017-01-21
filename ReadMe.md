@@ -24,12 +24,12 @@ package main
 import (
 	"fmt"
 	"log"
-  
+
   "github.com/olibob/awsipranges"
 )
 
 func main() {
-	ipRanges, err := AwsIPRanges()
+	ipRanges, err := awsipranges.AwsIPRanges()
 	if err != nil {
 		log.Fatalf("Couldn't get IP ranges: %s", err)
 	}
